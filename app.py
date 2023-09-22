@@ -4,7 +4,7 @@ from json import load
 APP_NAME = "OpenLibri"
 
 app = Flask(__name__)
-books = load(open("static/books/manifest.json", "r"))
+books = load(open("static/assets/books/manifest.json", "r"))
 
 @app.route("/")
 def home():
